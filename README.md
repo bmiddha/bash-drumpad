@@ -16,6 +16,10 @@ Cause was very bored one night.
 aplay
 amixer (for volume only)
 
+## Usage
+
+`./bashpad`
+
 ### Inspiration
 
 Inspired by @dixler(https://github.com/dixler)'s piano keyboard.
