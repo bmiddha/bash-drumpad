@@ -11,6 +11,11 @@ It is a drumpad for bash.
 
 Cause was very bored one night.
 
+## Dependencies
+
+aplay
+amixer (for volume only)
+
 ### Inspiration
 
 Inspired by @dixler(https://github.com/dixler)'s piano keyboard.
