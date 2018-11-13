@@ -20,6 +20,26 @@ amixer (for volume only)
 
 `./bashpad`
 
+## Keybinds
+|Key   | Sample        |
+|------|---------------|
+|asqw  |snare          |
+|p[';  |kick           |
+|io    |hi hat closed  |
+|kl    |hi hat open    |
+|bn    |tom1           |
+|m,    |tom2           |
+|./    |tom3           |
+|yu    |tamborine      |
+|hj    |clap           |
+|zx    |snare rim      |
+|redf  |crash          |
+|cv    |ride           |
+|\     |rubber chiken  |
+|+=    |volume up      |
+|-     |volume down    |
+|ESC   |exit           |
+
 ### Inspiration
 
 Inspired by [@dixler](https://github.com/dixler)'s piano keyboard.
