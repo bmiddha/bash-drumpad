@@ -50,6 +50,9 @@ while true; do
         "c" | "v")
             aplay -q samples/ride.wav&
             ;;
+        "\\")
+            aplay -q samples/rubberChiken.wav&
+            ;;
         "=" | "+")
             amixer -q sset "Master" 5%+
             ;;
