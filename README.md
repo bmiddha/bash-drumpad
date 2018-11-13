@@ -22,5 +22,5 @@ amixer (for volume only)
 
 ### Inspiration
 
-Inspired by @dixler(https://github.com/dixler)'s piano keyboard.
+Inspired by [@dixler](https://github.com/dixler)'s piano keyboard.
 
