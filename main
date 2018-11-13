@@ -1,45 +1,64 @@
 #!/bin/bash
 
-while true; do
-read -rsn1 input
+echo "========================================"
+echo "Super Mega Awesome Drumpad for the shell"
+echo "Volume Controls: <+|=> and <->"
+echo "Press <esc> to exit"
+echo "========================================"
+echo "GitHub: github.com/bmiddha/bash-drumpad"
+echo ""
+echo "Time to bash the keyboard. You'll figure it out."
 
-case $input in
-"a" | "s" | "q" | "w")
-  aplay -q samples/snare.wav&
-  ;;
-"p" | "[" | "'" | ";")
-  aplay -q samples/kick.wav&
-  ;;
-"i" | "o")
-  aplay -q samples/hatc.wav&
-  ;;
- "l" | "k")
-  aplay -q samples/hato.wav&
-  ;;
-"b" | "n")
-  aplay -q samples/tom1.wav&
-  ;;
-"m" | ",")
-  aplay -q samples/tom2.wav&
-  ;;
-"." | "/")
-  aplay -q samples/tom3.wav&
-  ;;
-"y" | "u")
-  aplay -q samples/tamb.wav&
-  ;;
-"h" | "j")
-  aplay -q samples/clap.wav&
-  ;;
-"z" | "x")
-  aplay -q samples/rim.wav&
-  ;;
-"r" | "e" | "d" | "f")
-  aplay -q samples/crash.wav&
-  ;;
-"c" | "v")
-  aplay -q samples/ride.wav&
-  ;;
-esac
+
+while true; do
+    read -rsn1 input
+
+    case $input in
+        "a" | "s" | "q" | "w")
+            aplay -q samples/snare.wav&
+            ;;
+        "p" | "[" | "'" | ";")
+            aplay -q samples/kick.wav&
+            ;;
+        "i" | "o")
+            aplay -q samples/hatc.wav&
+            ;;
+        "l" | "k")
+            aplay -q samples/hato.wav&
+            ;;
+        "b" | "n")
+            aplay -q samples/tom1.wav&
+            ;;
+        "m" | ",")
+            aplay -q samples/tom2.wav&
+            ;;
+        "." | "/")
+            aplay -q samples/tom3.wav&
+            ;;
+        "y" | "u")
+            aplay -q samples/tamb.wav&
+            ;;
+        "h" | "j")
+            aplay -q samples/clap.wav&
+            ;;
+        "z" | "x")
+            aplay -q samples/rim.wav&
+            ;;
+        "r" | "e" | "d" | "f")
+            aplay -q samples/crash.wav&
+            ;;
+        "c" | "v")
+            aplay -q samples/ride.wav&
+            ;;
+        "=" | "+")
+            amixer -q sset "Master" 5%+
+            ;;
+        "-")
+            amixer -q sset "Master" 5%-
+            ;;
+        $'\e')
+            exit
+            ;;
+    esac
 
 done
